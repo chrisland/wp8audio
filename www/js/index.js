@@ -36,7 +36,7 @@ var app = {
         
         alert('done '+getPhoneGapPath());
         
-        
+        alert(cordova.file.applicationDirectory);
         
         window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/index.html", gotFile, fail);
         	
@@ -159,8 +159,8 @@ function getPhoneGapPath() {
 
 
 function fail(e) {
-	console.log("FileSystem Error");
-	console.dir(e);
+	alert("FileSystem Error");
+	alert( JSON.stringify(e) );
 }
 
 function gotFile(fileEntry) {
@@ -169,7 +169,7 @@ function gotFile(fileEntry) {
 		var reader = new FileReader();
 
 		reader.onloadend = function(e) {
-			console.log("Text is: "+this.result);
+			alert("Text is: "+this.result);
 			document.querySelector("#info").innerHTML = this.result;
 		}
 

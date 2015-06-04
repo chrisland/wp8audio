@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         
-        //alert('done '+getPhoneGapPath());
+        alert('done '+getPhoneGapPath());
         
         //alert(cordova.file.applicationDirectory);
         
@@ -92,7 +92,7 @@ var app = {
 		alert(cordova.file.applicationDirectory);
 		
 */
-
+	
 		document.getElementById('info').innerHTML = JSON.stringify(window, null, 2);
 		
        // playAudio('ms-appdata://www/sounds/audio1.mp3');

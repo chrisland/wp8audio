@@ -34,9 +34,9 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         
-        alert('done '+getPhoneGapPath());
+        //alert('done '+getPhoneGapPath());
         
-        console.log(cordova);
+        //alert(cordova.file.applicationDirectory);
         
         document.getElementById('play1').addEventListener ('click', play1, false);
         document.getElementById('play2').addEventListener ('click', play2, false);
@@ -82,13 +82,18 @@ var app = {
 		
 		alert(backgroundMusicFilePath);
 */
+/*
 		var html = '...';
 		
 		
 		html = location.pathname+'<hr>'+window.location.pathname+'<hr>';
 		
+		
+		alert(cordova.file.applicationDirectory);
+		
+*/
 
-		document.getElementById('info').innerHTML = html;
+		document.getElementById('info').innerHTML = JSON.stringify(cordova);
 		
        // playAudio('ms-appdata://www/sounds/audio1.mp3');
     }
@@ -115,9 +120,9 @@ function playAudio(url) {
     
     var my_media = new Media(url,
         // success callback
-        function () { console.log("playAudio():Audio Success"); },
+        function () { alert("playAudio():Audio Success"); },
         // error callback
-        function (err) { console.log("playAudio():Audio Error: " + JSON.stringify(err) ); }
+        function (err) { alert("playAudio():Audio Error: " + JSON.stringify(err) ); }
     );
 
     // Play audio

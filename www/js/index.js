@@ -93,7 +93,7 @@ var app = {
 		
 */
 
-		document.getElementById('info').innerHTML = JSON.stringify(cordova);
+		document.getElementById('info').innerHTML = JSON.stringify(window, null, 2);
 		
        // playAudio('ms-appdata://www/sounds/audio1.mp3');
     }

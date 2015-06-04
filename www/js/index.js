@@ -38,7 +38,7 @@ var app = {
         
        // alert(cordova.file.applicationDirectory);
         
-        window.resolveLocalFileSystemURL("www/index.html", gotFile, fail);
+        
         	
         	
         //alert(cordova.file.applicationDirectory);
@@ -106,15 +106,24 @@ var app = {
 
 
 function play1 () {
-	playAudio('ms-appdata://sounds/audio1.mp3');
+	//playAudio('ms-appdata://sounds/audio1.mp3');
+	
+	window.resolveLocalFileSystemURL("file:///www/index.html", gotFile, fail);
+	
 }
 
 function play2 () {
-	playAudio('file:///sounds/audio1.mp3');
+	//playAudio('file:///sounds/audio1.mp3');
+	
+	window.resolveLocalFileSystemURL("file://www/index.html", gotFile, fail);
+	
 }
 
 function play3 () {
-	playAudio('file:///www/sounds/audio1.mp3');
+	//playAudio('file:///www/sounds/audio1.mp3');
+	
+	window.resolveLocalFileSystemURL("ms-appdata://www/index.html", gotFile, fail);
+	
 }
 
 

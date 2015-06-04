@@ -8,7 +8,7 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-     <preference name="phonegap-version" value="3.7.0" />
+    <preference name="phonegap-version" value="3.7.0" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
@@ -27,7 +27,10 @@
     
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.console" />
-
+    
+    <gap:plugin name="org.apache.cordova.file" />
+    <gap:plugin name="org.apache.cordova.file-transfer" />
+    
     <gap:plugin name="nl.nilscorver.cordova.media" version="0.2.18" />
     
     

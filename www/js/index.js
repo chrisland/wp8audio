@@ -106,23 +106,23 @@ var app = {
 
 
 function play1 () {
-	//playAudio('ms-appdata://sounds/audio1.mp3');
+	playAudio('ms-appdata://sounds/audio1.mp3');
 	
-	window.resolveLocalFileSystemURL("file:///www/index.html", gotFile, fail);
+	//window.resolveLocalFileSystemURL("file:///www/index.html", gotFile, fail);
 	
 }
 
 function play2 () {
-	//playAudio('file:///sounds/audio1.mp3');
+	playAudio('file:///sounds/audio1.mp3');
 	
-	window.resolveLocalFileSystemURL("file://www/index.html", gotFile, fail);
+	//window.resolveLocalFileSystemURL("file://www/index.html", gotFile, fail);
 	
 }
 
 function play3 () {
-	//playAudio('file:///www/sounds/audio1.mp3');
+	playAudio('www/sounds/audio1.mp3');
 	
-	window.resolveLocalFileSystemURL("ms-appdata://www/index.html", gotFile, fail);
+	//window.resolveLocalFileSystemURL("www/index.html", gotFile, fail);
 	
 }
 

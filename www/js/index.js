@@ -36,9 +36,9 @@ var app = {
         
         alert('done '+getPhoneGapPath());
         
-        alert(cordova.file.applicationDirectory);
+       // alert(cordova.file.applicationDirectory);
         
-        window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/index.html", gotFile, fail);
+        window.resolveLocalFileSystemURL("www/index.html", gotFile, fail);
         	
         	
         //alert(cordova.file.applicationDirectory);

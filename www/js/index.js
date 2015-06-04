@@ -36,6 +36,11 @@ var app = {
         
         alert('done '+getPhoneGapPath());
         
+        
+        
+        window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "www/index.html", gotFile, fail);
+        	
+        	
         //alert(cordova.file.applicationDirectory);
         
         document.getElementById('play1').addEventListener ('click', play1, false);
@@ -93,7 +98,7 @@ var app = {
 		
 */
 	
-		document.getElementById('info').innerHTML = JSON.stringify(window, null, 2);
+		//document.getElementById('info').innerHTML = JSON.stringify(window, null, 2);
 		
        // playAudio('ms-appdata://www/sounds/audio1.mp3');
     }
@@ -144,3 +149,31 @@ function getPhoneGapPath() {
     return 'file://' + path;
 
 };
+
+
+
+
+
+
+
+
+
+function fail(e) {
+	console.log("FileSystem Error");
+	console.dir(e);
+}
+
+function gotFile(fileEntry) {
+
+	fileEntry.file(function(file) {
+		var reader = new FileReader();
+
+		reader.onloadend = function(e) {
+			console.log("Text is: "+this.result);
+			document.querySelector("#info").innerHTML = this.result;
+		}
+
+		reader.readAsText(file);
+	});
+
+}

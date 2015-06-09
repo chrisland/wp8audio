@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         
-        alert('done '+getPhoneGapPath());
+       // alert('done '+getPhoneGapPath());
         
        // alert(cordova.file.applicationDirectory);
         

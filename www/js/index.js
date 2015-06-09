@@ -106,21 +106,21 @@ var app = {
 
 
 function play1 () {
-	playAudio('ms-appdata://sounds/audio1.mp3');
+	playAudio('app/www/sounds/audio1.mp3');
 	
 	//window.resolveLocalFileSystemURL("file:///www/index.html", gotFile, fail);
 	
 }
 
 function play2 () {
-	playAudio('file:///sounds/audio1.mp3');
+	playAudio('/app/www/sounds/audio1.mp3');
 	
 	//window.resolveLocalFileSystemURL("file://www/index.html", gotFile, fail);
 	
 }
 
 function play3 () {
-	playAudio('www/sounds/audio1.mp3');
+	playAudio('app/sounds/audio1.mp3');
 	
 	//window.resolveLocalFileSystemURL("www/index.html", gotFile, fail);
 	

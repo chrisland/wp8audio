@@ -31,7 +31,7 @@
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
     
-    <gap:plugin name="nl.nilscorver.cordova.media" version="0.2.18" />
+    <gap:plugin name="nl.nilscorver.cordova.media" />
     
     
     <icon src="icon.png" />

@@ -130,7 +130,7 @@ function play3 () {
 function playAudio(url) {
     // Play the audio file at url
     
-    alert(url);
+   // alert(url);
     
     var my_media = new Media(url,
         // success callback

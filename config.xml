@@ -37,7 +37,7 @@
 	
 -->
 	
-	<platform name="winphone">
+	<gap:platform name="winphone" />
 <!--
 
 	   
@@ -53,7 +53,6 @@
 		</gap:config-file>
 		
 -->
-	 </platform>
 	
 	<allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

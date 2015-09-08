@@ -1,5 +1,3 @@
-
-
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.chrisland.audio" versionCode="1" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>AudioPlayer</name>
@@ -40,6 +38,7 @@
 -->
 	
 	<platform name="winphone">
+<!--
 
 	   
 		<config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
@@ -52,6 +51,8 @@
 		    </Languages>
 		    <DefaultLanguage xmlns="" code="de-DE" />
 		</gap:config-file>
+		
+-->
 	 </platform>
 	
 	<allow-intent href="http://*/*" />

@@ -36,7 +36,7 @@
     </platform>
 	
 -->
-	
+	<gap:platform name="android" />
 	<gap:platform name="winphone" />
 <!--
 

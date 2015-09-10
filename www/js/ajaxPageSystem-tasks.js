@@ -30,6 +30,7 @@ APS.task = (function(){
 			var fail = function (e,f) {
 				log( JSON.stringify(e) + ' ### ' + JSON.stringify(f) );	
 			};
+			/*
 			window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, 
 			    function onFileSystemSuccess(fileSystem) {
 			        fileSystem.root.getFile(
@@ -42,6 +43,8 @@ APS.task = (function(){
 				        log( fileEntry.toURL() );
 				        
 			            var sPath = fileEntry.toURL().replace("dummy.jpg","");
+			            
+			            
 			            var fileTransfer = new FileTransfer();
 			            fileEntry.remove();
 			
@@ -64,7 +67,32 @@ APS.task = (function(){
 			        }, fail);
 			    }, fail);
 		
+			*/
 			
+			
+			var fileTransfer = new FileTransfer();
+     
+            fileTransfer.download(
+                "http://www.h-sechs.de/test/bild.jpg",
+                "theFile.jpg",
+                
+                function(theFile) {
+                    log("download complete: " + theFile.toURI());
+                    log("FILE #####:   "+ theFile.toURL() );
+                },
+                function(error) {
+	                log("http_status: " + error.http_status);
+                    log("download error source " + error.source);
+                    log("download error target " + error.target);
+                    log("upload error code: " + error.code);
+                    log("exception: " + error.exception);
+                },
+                true
+            );
+            
+            
+            
+            
 			
 			return true;
 		}

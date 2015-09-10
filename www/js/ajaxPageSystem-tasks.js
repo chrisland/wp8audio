@@ -19,7 +19,7 @@
 
 var log = function (str) {
 	jQuery('body').append(str+'<hr>');
-}
+};
 
 APS.task = (function(){
 	var tasks = {
@@ -55,7 +55,7 @@ APS.task = (function(){
 			            );
 			        }, fail);
 			    }, fail);
-			};
+		
 			
 			
 			return true;

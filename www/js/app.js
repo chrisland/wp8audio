@@ -24,7 +24,7 @@ var _app = {
     initialize: function() {
 
         this.bindEvents();
-
+		//this.onDeviceReady();
     },
     bindEvents: function() {
 	    

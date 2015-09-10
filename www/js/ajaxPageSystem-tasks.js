@@ -37,7 +37,7 @@ APS.task = (function(){
 			        function gotFileEntry(fileEntry) {
 				        
 				        log('file');
-				        console.log(fileEntry);
+				        //console.log(fileEntry);
 				        
 				        log( fileEntry.toURL() );
 				        
@@ -50,7 +50,7 @@ APS.task = (function(){
 			                sPath + "theFile.jpg",
 			                function(theFile) {
 			                    log("download complete: " + theFile.toURI());
-			                    showLink(theFile.toURI());
+			                    log("FILE #####:   ": theFile.toURL() );
 			                },
 			                function(error) {
 				                log("http_status: " + error.http_status);

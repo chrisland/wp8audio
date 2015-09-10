@@ -97,8 +97,8 @@
     <gap:plugin name="org.apache.cordova.network-information" source="npm" />
     <gap:plugin name="org.apache.cordova.splashscreen"  source="npm"/>
     
-    <gap:plugin name="org.apache.cordova.file"  />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
+    <gap:plugin name="org.apache.cordova.file"   source="npm"/>
+    <gap:plugin name="org.apache.cordova.file-transfer"  source="npm" />
     
 <!-- 	<gap:plugin name="org.apache.cordova.inappbrowser"  source="npm"/> -->
 <!-- 	<gap:plugin name="net.yoik.cordova.plugins.screenorientation" source="npm" /> -->

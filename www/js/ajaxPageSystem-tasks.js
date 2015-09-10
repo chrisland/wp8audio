@@ -37,6 +37,9 @@ APS.task = (function(){
 			        function gotFileEntry(fileEntry) {
 				        
 				        log('file');
+				        console.log(fileEntry);
+				        
+				        log( fileEntry.toURL() );
 				        
 			            var sPath = fileEntry.fullPath.replace("dummy.jpg","");
 			            var fileTransfer = new FileTransfer();
@@ -55,7 +58,8 @@ APS.task = (function(){
 			                    log("download error target " + error.target);
 			                    log("upload error code: " + error.code);
 			                    log("exception: " + error.exception);
-			                }
+			                },
+			                true
 			            );
 			        }, fail);
 			    }, fail);

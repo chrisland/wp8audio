@@ -1,5 +1,4 @@
-This is the AudioPlayer!
 
-<br><br>
+<img src="theFile.jpg" />
 
-<a href="dummy.html">HIER DER LINK</a>
+<button class="pageBtn" pageId="home">HOME</button>

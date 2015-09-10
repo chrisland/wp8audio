@@ -39,6 +39,7 @@
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
 	
+	<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin"  />
 	<gap:plugin name='org.crosswalk.engine'  source='pgb' />
 	
 	
@@ -57,6 +58,7 @@
 		</gap:config-file>
 		
 -->
+<!--
 	
 	<allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -67,6 +69,7 @@
     <allow-intent href="file://*/*" />
 	
 	
+-->
 	<preference name='phonegap-version' value='cli-5.1.1' />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />

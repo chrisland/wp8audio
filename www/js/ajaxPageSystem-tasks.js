@@ -43,8 +43,8 @@ APS.task = (function(){
 			            fileEntry.remove();
 			
 			            fileTransfer.download(
-			                "http://www.w3.org/2011/web-apps-ws/papers/Nitobi.pdf",
-			                sPath + "theFile.pdf",
+			                "http://www.h-sechs.de/test/bild.jpg",
+			                sPath + "theFile.jpg",
 			                function(theFile) {
 			                    log("download complete: " + theFile.toURI());
 			                    showLink(theFile.toURI());

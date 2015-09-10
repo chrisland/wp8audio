@@ -27,7 +27,9 @@ APS.task = (function(){
 		initialize: function (page, content, e, dom) {
 			
 			log('init');
-			
+			var fail = function (e,f) {
+				log( JSON.stringify(e) + ' ### ' + JSON.stringify(f) );	
+			};
 			window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, 
 			    function onFileSystemSuccess(fileSystem) {
 			        fileSystem.root.getFile(

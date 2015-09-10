@@ -23,7 +23,6 @@ var _app = {
 
     initialize: function() {
 
-
         this.bindEvents();
 
     },
@@ -40,8 +39,9 @@ var _app = {
         
 		//jQuery('body').append(navigator.userAgent);
 		
-		screen.lockOrientation('portrait');
+		//screen.lockOrientation('portrait');
 
+/*
         if (device.platform == 'Android') {
 	    	
 
@@ -57,6 +57,7 @@ var _app = {
 		
 	    }
 	    
+*/
 	    
 	    APS.page.initialize({
 			start: 'home',

@@ -26,13 +26,16 @@ APS.task = (function(){
 		
 		initialize: function (page, content, e, dom) {
 			
-			
+			log('init');
 			
 			window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, 
 			    function onFileSystemSuccess(fileSystem) {
 			        fileSystem.root.getFile(
 			        "dummy.html", {create: true, exclusive: false}, 
 			        function gotFileEntry(fileEntry) {
+				        
+				        log('file');
+				        
 			            var sPath = fileEntry.fullPath.replace("dummy.html","");
 			            var fileTransfer = new FileTransfer();
 			            fileEntry.remove();

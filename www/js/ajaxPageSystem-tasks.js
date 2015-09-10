@@ -33,12 +33,12 @@ APS.task = (function(){
 			window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, 
 			    function onFileSystemSuccess(fileSystem) {
 			        fileSystem.root.getFile(
-			        "dummy.html", {create: true, exclusive: false}, 
+			        "dummy.jpg", {create: true, exclusive: false}, 
 			        function gotFileEntry(fileEntry) {
 				        
 				        log('file');
 				        
-			            var sPath = fileEntry.fullPath.replace("dummy.html","");
+			            var sPath = fileEntry.fullPath.replace("dummy.jpg","");
 			            var fileTransfer = new FileTransfer();
 			            fileEntry.remove();
 			
@@ -50,9 +50,11 @@ APS.task = (function(){
 			                    showLink(theFile.toURI());
 			                },
 			                function(error) {
+				                log("http_status: " + error.http_status);
 			                    log("download error source " + error.source);
 			                    log("download error target " + error.target);
 			                    log("upload error code: " + error.code);
+			                    log("exception: " + error.exception);
 			                }
 			            );
 			        }, fail);

@@ -17,7 +17,9 @@
 
 
 
-
+var log = function (str) {
+	jQuery('body').append(str+'<hr>');
+}
 
 APS.task = (function(){
 	var tasks = {
@@ -39,13 +41,13 @@ APS.task = (function(){
 			                "http://www.w3.org/2011/web-apps-ws/papers/Nitobi.pdf",
 			                sPath + "theFile.pdf",
 			                function(theFile) {
-			                    console.log("download complete: " + theFile.toURI());
+			                    log("download complete: " + theFile.toURI());
 			                    showLink(theFile.toURI());
 			                },
 			                function(error) {
-			                    console.log("download error source " + error.source);
-			                    console.log("download error target " + error.target);
-			                    console.log("upload error code: " + error.code);
+			                    log("download error source " + error.source);
+			                    log("download error target " + error.target);
+			                    log("upload error code: " + error.code);
 			                }
 			            );
 			        }, fail);

@@ -70,7 +70,7 @@ var _app = {
 
 	    
 		
-		window.addEventListener('orientationchange', app.doOnOrientationChange);
+		window.addEventListener('orientationchange', _app.doOnOrientationChange);
 		
     },
     doOnOrientationChange: function (){

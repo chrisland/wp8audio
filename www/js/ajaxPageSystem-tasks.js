@@ -41,7 +41,7 @@ APS.task = (function(){
 				        
 				        log( fileEntry.toURL() );
 				        
-			            var sPath = fileEntry.fullPath.replace("dummy.jpg","");
+			            var sPath = fileEntry.toURL().replace("dummy.jpg","");
 			            var fileTransfer = new FileTransfer();
 			            fileEntry.remove();
 			
